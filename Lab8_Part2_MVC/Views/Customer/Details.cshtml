@@ -1,0 +1,58 @@
+﻿@using Lab8_Part2_MVC.ViewModels
+@model Product_Cust_ViewModel
+
+@{
+    ViewData["Title"] = "Customer Details";
+}
+
+<div class="container">
+    <h1 class="mb-4">Customer Details</h1>
+
+    <div class="card shadow mb-4">
+        <div class="card-header bg-primary text-white">
+            <h4>@Model.CustomerName</h4>
+        </div>
+        <div class="card-body">
+            <dl class="row">
+                <dt class="col-sm-3">Customer ID:</dt>
+                <dd class="col-sm-9">@Model.CustomerID</dd>
+
+                <dt class="col-sm-3">Name:</dt>
+                <dd class="col-sm-9">@Model.CustomerName</dd>
+
+                <dt class="col-sm-3">Email:</dt>
+                <dd class="col-sm-9">@Model.CustomerEmail</dd>
+
+                <dt class="col-sm-3">Phone:</dt>
+                <dd class="col-sm-9">@Model.CustomerPhone</dd>
+
+                <dt class="col-sm-3">Total Products:</dt>
+                <dd class="col-sm-9">@Model.Products.Count</dd>
+            </dl>
+        </div>
+    </div>
+
+    @if (Model.Products.Any())
+    {
+        <h3 class="mb-3">Customer's Products</h3>
+        <div class="row">
+            @foreach (var product in Model.Products)
+            {
+                <div class="col-md-4 mb-4">
+                    <partial name="_CardPartial" model="product" />
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            This customer has no products yet.
+        </div>
+    }
+
+    <div class="mt-4">
+        <a asp-action="Edit" asp-route-id="@Model.CustomerID" class="btn btn-warning">Edit Customer</a>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</div>

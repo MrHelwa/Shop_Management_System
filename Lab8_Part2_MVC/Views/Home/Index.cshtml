@@ -1,0 +1,60 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="text-center">
+        <h1 class="display-4">Welcome to Product Shop</h1>
+        <p class="lead">Manage your products and customers efficiently</p>
+    </div>
+
+    <div class="row mt-5">
+
+        <!-- Products Card -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-box-seam display-1 text-primary"></i>
+                    <h3 class="card-title mt-3">Products</h3>
+                    <p class="card-text">Browse, add, edit, and manage all your products</p>
+                    <a asp-controller="Product" asp-action="Index" class="btn btn-primary">
+                        <i class="bi bi-arrow-right-circle"></i> View Products
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Customers Card -->
+        <div class="col-md-6 mb-4">
+            <div class="card shadow h-100">
+                <div class="card-body text-center">
+                    <i class="bi bi-people-fill display-1 text-success"></i>
+                    <h3 class="card-title mt-3">Customers</h3>
+                    <p class="card-text">Manage your customer database and their purchases</p>
+                    <a asp-controller="Customer" asp-action="Index" class="btn btn-success">
+                        <i class="bi bi-arrow-right-circle"></i> View Customers
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    @* <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card shadow bg-light">
+                <div class="card-body">
+                    <h4><i class="bi bi-info-circle"></i> Features</h4>
+                    <ul>
+                        <li>Complete CRUD operations for Products and Customers</li>
+                        <li>Responsive Bootstrap design with card layouts</li>
+                        <li>Partial views for reusable components</li>
+                        <li>ViewModel pattern for complex data display</li>
+                        <li>Client-side and server-side validation</li>
+                        <li>1:M relationship (Customer has many Products)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> *@
+</div>
