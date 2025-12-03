@@ -1,40 +1,52 @@
-🛒 Online Shop Management System (Demo)
+# Online Shop Management System (Demo)
 
-This is a demo project for an Online Shop Management System built with .NET and SQL Server.
-The setup is simple — just clone, open, set the connection string, and run.
+This is a demo project for an Online Shop Management System built with .NET and SQL Server.  
+The setup is simple — clone the project, open it, update the connection string, and run.
 
-🚀 Getting Started
+---
+
+## Getting Started
 
 Follow the steps below to run the project:
 
-1️⃣ Clone the Repository
+### 1. Clone the Repository
+```bash
 git clone PUT_GITHUB_LINK_HERE
+```
 
-2️⃣ Open the Solution
+### 2. Open the Solution
 
-Open the .sln file using Visual Studio or Visual Studio Code (with C# extension).
+Open the `.sln` file using Visual Studio or Visual Studio Code (with the C# extension installed).
 
-3️⃣ Run the Project
+### 3. Run the Project
 
-Click the Run / Play button in the top-right corner to start the application.
+Click the **Run / Play** button in the top-right corner to start the application.
 
-🗄️ Database Connection
+---
 
-The project uses SQL Server Express by default.
-If you're using SQL Server Developer Edition, replace the existing connection string.
+## Database Connection
 
-✔ Default Connection String (SQL Server Express)
+The project uses SQL Server Express by default.  
+If you are using SQL Server Developer Edition, replace the existing connection string.
 
-Found in:
+### Default Connection String (SQL Server Express)
 
+You will find the connection string in the file:
+
+```
 Models/ShopDbContext.cs
+```
 
-✔ Use This Connection String (for SQL Server Developer)
-"Server=.\SQLEXPRESS;Database=ProductShopDB_ITP;Integrated Security=true;TrustServerCertificate=true;"
+### Connection String for SQL Server Developer Edition
+```csharp
+Server=.\SQLEXPRESS;Database=ProductShopDB_ITP;Integrated Security=true;TrustServerCertificate=true;
+```
 
+Replace the existing connection string with the one above.
 
-Replace the existing one inside ShopDbContext.cs with the connection string above.
+---
 
-🎉 Enjoy!
+## Enjoy
 
-You’re all set. Run the application and explore the Online Shop Management System demo.
+You are all set. Run the application and explore the Online Shop Management System demo.
+
