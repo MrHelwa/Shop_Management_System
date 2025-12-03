@@ -1,28 +1,43 @@
-🛒 Online Shop Management System (Demo)
-This is a demo project for an online shop management system. It uses SQL Server as the database — just plug and play!
+🛒 Online Shop Management System – Demo
+
+Welcome to the Online Shop Management System demo project.
+This application uses SQL Server as its database and is ready to run with minimal setup — just plug and play!
 
 🚀 Getting Started
-Clone the repository
 
-bash
-git clone put_github_link_here
-Open the solution file
+Follow the steps below to set up and run the project:
 
-Navigate to the project folder.
+📥 1. Clone the Repository
+git clone PUT_GITHUB_LINK_HERE
 
-Open the .sln file in Visual Studio (or VS Code with extensions).
+🧪 2. Open the Solution
 
-Run the project
+Open the .sln file using Visual Studio.
 
-Click the Play ▶️ button at the top right in Visual Studio/VS Code.
+▶️ 3. Run the Application
 
-⚙️ Database Setup
-The project uses SQL Server Express by default.
+Click the Run / Play button at the top right corner in Visual Studio to start the project.
 
-If you’re using SQL Server Developer Edition, update the connection string:
+🗄️ Database Configuration
+🔧 4. Default Connection
 
-csharp
+The project is configured to use SQL Server Express by default.
+
+🛠️ 5. Using SQL Server Developer Edition?
+
+Replace the existing connection string with the following:
+
 Server=.\SQLEXPRESS;Database=ProductShopDB_ITP;Integrated Security=true;TrustServerCertificate=true;
-📂 You’ll find this connection string in: Models/ShopDbContext.cs → replace the existing string with the one above.
 
-🎉 Enjoy!
+📂 6. Where to Update the Connection String
+
+Navigate to:
+
+Models → ShopDbContext.cs
+
+
+Replace the current connection string inside this file with the provided one above.
+
+✅ You're All Set!
+
+Enjoy exploring and testing the Online Shop Management System! If you like the project, feel free to ⭐ star the repo.
