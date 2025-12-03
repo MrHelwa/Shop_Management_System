@@ -1,43 +1,40 @@
-🛒 Online Shop Management System – Demo
+🛒 Online Shop Management System (Demo)
 
-Welcome to the Online Shop Management System demo project.
-This application uses SQL Server as its database and is ready to run with minimal setup — just plug and play!
+This is a demo project for an Online Shop Management System built with .NET and SQL Server.
+The setup is simple — just clone, open, set the connection string, and run.
 
 🚀 Getting Started
 
-Follow the steps below to set up and run the project:
+Follow the steps below to run the project:
 
-📥 1. Clone the Repository
+1️⃣ Clone the Repository
 git clone PUT_GITHUB_LINK_HERE
 
-🧪 2. Open the Solution
+2️⃣ Open the Solution
 
-Open the .sln file using Visual Studio.
+Open the .sln file using Visual Studio or Visual Studio Code (with C# extension).
 
-▶️ 3. Run the Application
+3️⃣ Run the Project
 
-Click the Run / Play button at the top right corner in Visual Studio to start the project.
+Click the Run / Play button in the top-right corner to start the application.
 
-🗄️ Database Configuration
-🔧 4. Default Connection
+🗄️ Database Connection
 
-The project is configured to use SQL Server Express by default.
+The project uses SQL Server Express by default.
+If you're using SQL Server Developer Edition, replace the existing connection string.
 
-🛠️ 5. Using SQL Server Developer Edition?
+✔ Default Connection String (SQL Server Express)
 
-Replace the existing connection string with the following:
+Found in:
 
-Server=.\SQLEXPRESS;Database=ProductShopDB_ITP;Integrated Security=true;TrustServerCertificate=true;
+Models/ShopDbContext.cs
 
-📂 6. Where to Update the Connection String
-
-Navigate to:
-
-Models → ShopDbContext.cs
+✔ Use This Connection String (for SQL Server Developer)
+"Server=.\SQLEXPRESS;Database=ProductShopDB_ITP;Integrated Security=true;TrustServerCertificate=true;"
 
 
-Replace the current connection string inside this file with the provided one above.
+Replace the existing one inside ShopDbContext.cs with the connection string above.
 
-✅ You're All Set!
+🎉 Enjoy!
 
-Enjoy exploring and testing the Online Shop Management System! If you like the project, feel free to ⭐ star the repo.
+You’re all set. Run the application and explore the Online Shop Management System demo.
