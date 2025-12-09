@@ -1,4 +1,5 @@
-# Online Shop Management System (Demo)
+# Online Shop Management System (Demo) شغل فاخر من الآخر
+# مش فاخر أوي.😁
 
 This is a demo project for an Online Shop Management System built with .NET and SQL Server.  
 The setup is simple — clone the project, open it, update the connection string, and run.
@@ -37,12 +38,12 @@ You will find the connection string in the file:
 Models/ShopDbContext.cs
 ```
 
-### Connection String for SQL Server Developer Edition
+### Connection String for SQL Server Developer Edition (
 ```csharp
 Server=.\SQLEXPRESS;Database=ProductShopDB_ITP;Integrated Security=true;TrustServerCertificate=true;
 ```
 
-Replace the existing connection string with the one above.
+Replace the existing connection string with the one above. if you have Sql server developer edition replce it with the sql server developer edition I كسلت أحطه. شغل نفسك (the exixting string is sql server express edition)
 
 ---
 
